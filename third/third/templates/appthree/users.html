@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>here ar user info for appthree</h1>
+    {% if users %}
+
+    <ol>
+      {%for person in users %}
+      <li>User info</li>
+      <ul>
+        <li>first name: {{person.firstname}}</li>
+        <li>last name:  {{person.lastname}}</li>
+        <li> email:{{person.email}}</li>
+        </ul>
+        {%endfor%}
+    </ol>
+    {%endif%}
+  </body>
+</html>
